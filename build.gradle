@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.sourcemuse.gradle.plugin:gradle-mongo-plugin:1.0.0'
+    }
+}
+
+plugins {
+	id 'org.springframework.boot' version '1.5.6.RELEASE'
+}
+
+apply plugin: 'war'
+war.archiveName = "matching.war"
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-parent:1.5.6.RELEASE'
+	compile 'org.springframework.boot:spring-boot-starter-web:1.5.6.RELEASE'
+}
