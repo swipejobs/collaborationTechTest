@@ -20,6 +20,10 @@ public class AppConfig {
 	@Value("${configuration.api.workersUrl:http://testapi.com.au}")
 	private String workersUrl;
 
+	// url for the matches API
+	@Value("${configuration.api.workersUrl:http://testapi.com.au}")
+	private String matchesUrl;
+
 	public String getJobsUrl()
 	{
 		return jobsUrl;
@@ -38,6 +42,16 @@ public class AppConfig {
 	public void setWorkersUrl(String workersUrl)
 	{
 		this.workersUrl = workersUrl;
+	}
+	
+	public String getMatchesUrl()
+	{
+		return matchesUrl;
+	}
+
+	public void setMatchesUrl(String matchesUrl)
+	{
+		this.matchesUrl = matchesUrl;
 	}
 
 }
