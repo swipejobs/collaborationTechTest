@@ -15,11 +15,17 @@ public class payrate implements Matcher {
         int second;
         int third;
 
+        List<Job> result = new List <Job>;
+
         for (Job j : Jobss)
         {
 
             first = Integer.parseInt(j.getBillRate().replace("$", ""));
-
+            result.add(j);
         }
+
+
+
+        return result;
     }
 }
